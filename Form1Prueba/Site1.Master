@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" CodeBehind="Site1.master.cs" Inherits="Form1Prueba.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="StyleSheet1.css" type="text/css" rel="stylesheet" />
+    <title>Título Página</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="contenedorTotal">
+
+        <header>
+            <h1>Cabecera</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>Uno</li>
+                <li>Dos</li>
+                <li>Tres</li>
+            </ul>
+        </nav>
+
+        <article>
+            <p>Hola que tal este es el texto principal</p>
+        
+            <%--CuadroPermitido--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </article>
+
+        <footer>Copyright &copy; GENLOYS S.A.
+
+        </footer>
+
+
+        
+        
+        
+    </div>
+    </form>
+</body>
+</html>
